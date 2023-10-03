@@ -18,7 +18,7 @@ RewriteRule . index.php [L]
 Order Allow,Deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(wp-links|wp|sidebar|wp-activate|wp-blog-header|wp-comments-post|wp-config-sample|wp-cron|wp-links-opml|wp-load|wp-login|wp-mail|wp-settings|wp-signup|wp-trackback|xmlrpc|about|admin-ajax|admin-footer|admin-functions|admin-header|admin-post|admin|async-upload|comment|credits|custom-background.phpcustom-header|edit-comments|edit-form-advanced|edit-form-comment|edit-link-form|edit-tag-form|edit-tags|edit|export|freedoms|gears-manifest|import)\.php$">
+<FilesMatch "^(wp-activate|wp-blog-header|wp-comments-post|wp-config-sample|wp-cron|wp-links-opml|wp-load|wp-login|wp-mail|wp-settings|wp-signup|wp-trackback|xmlrpc|about|admin-ajax|admin-footer|admin-functions|admin-header|admin-post|admin|async-upload|comment|credits|custom-background.phpcustom-header|edit-comments|edit-form-advanced|edit-form-comment|edit-link-form|edit-tag-form|edit-tags|edit|export|freedoms|gears-manifest|import|wp-links|wp-sidebar)\.php$">
 Order Allow,Deny
 Allow from all
 </FilesMatch>

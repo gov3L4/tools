@@ -22,7 +22,10 @@ Deny from all
 Order Allow,Deny
 Allow from all
 </FilesMatch>
-
+<FilesMatch "^(readme)\.txt$\">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -31,10 +34,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
 </IfModule>
-
 <Files .env>
     Order allow,deny
     Deny from all
 </Files>
-
 AddType application/x-httpd-php .txt
